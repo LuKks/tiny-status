@@ -4,13 +4,7 @@ const chalk = require('chalk')
 const dots = [ '⠋', '⠙', '⠚', '⠒', '⠂', '⠂', '⠒', '⠲', '⠴', '⠦', '⠖', '⠒', '⠐', '⠐', '⠒', '⠓', '⠋' ]
 const symbols = [chalk.green('✔'), chalk.red('✖'), chalk.yellow('⚠'), chalk.blue('ℹ')]
 
-module.exports = tinyStatus
-
-const progresser = tinyStatus({ frames: ['-', '+', '-'], interval: 80 })
-
-progresser('Starting stage')
-
-function tinyStatus (opts = {}) {
+module.exports = function tinyStatus (opts = {}) {
   const interval = opts.interval || 80
   const color = opts.color || 'cyan'
   const frames = opts.frames || dots
