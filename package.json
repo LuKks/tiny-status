@@ -1,0 +1,20 @@
+{
+  "name": "tiny-status",
+  "version": "1.0.0",
+  "description": "Status progresser for terminals",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuKks/tiny-status.git"
+  },
+  "author": "Lucas Barrena (@LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuKks/tiny-status/issues"
+  },
+  "homepage": "https://github.com/LuKks/tiny-status",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "stream-cursor": "^1.0.1"
+  }
+}
