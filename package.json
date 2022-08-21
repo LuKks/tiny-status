@@ -1,6 +1,6 @@
 {
   "name": "tiny-status",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Status progresser for terminals",
   "main": "index.js",
   "repository": {
