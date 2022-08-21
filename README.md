@@ -6,6 +6,8 @@ Status progresser for terminals.
 npm i tiny-status
 ```
 
+![tiny-status](https://user-images.githubusercontent.com/12686176/185763806-5d066931-614c-4ac5-b73b-06d16b1c4e0d.gif)
+
 ## Usage
 ```javascript
 const tinyStatus = require('tiny-status')
