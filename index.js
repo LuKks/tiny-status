@@ -1,8 +1,8 @@
 const streamCursor = require('stream-cursor')
-const chalk = require('chalk')
+const crayon = require('tiny-crayon')
 
-const dots = [ '⠋', '⠙', '⠚', '⠒', '⠂', '⠂', '⠒', '⠲', '⠴', '⠦', '⠖', '⠒', '⠐', '⠐', '⠒', '⠓', '⠋' ]
-const symbols = [chalk.green('✔'), chalk.red('✖'), chalk.yellow('⚠'), chalk.blue('ℹ')]
+const dots = ['⠋', '⠙', '⠚', '⠒', '⠂', '⠂', '⠒', '⠲', '⠴', '⠦', '⠖', '⠒', '⠐', '⠐', '⠒', '⠓', '⠋']
+const symbols = [crayon.green('✔'), crayon.red('✖'), crayon.yellow('⚠'), crayon.blue('ℹ')]
 
 module.exports = function tinyStatus (opts = {}) {
   const interval = opts.interval || 80
@@ -32,7 +32,7 @@ module.exports = function tinyStatus (opts = {}) {
   }
 
   function ontick (end, symbol = frame(), state) {
-    let prefix = chalk[color](symbol)
+    let prefix = crayon[color](symbol)
     if (prefix) prefix += ' '
 
     if (!end) {

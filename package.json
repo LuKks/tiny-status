@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/LuKks/tiny-status",
   "dependencies": {
-    "chalk": "^4.1.2",
-    "stream-cursor": "^1.0.1"
+    "stream-cursor": "^1.0.1",
+    "tiny-crayon": "^1.0.3"
   }
 }
