@@ -36,5 +36,10 @@ const progresser = tinyStatus({ frames: ['-'], color: 'gray' })
 const progresser = tinyStatus({ frames: ['-', '+', '-'], interval: 80 })
 ```
 
+Default std stream used is `stderr`:
+```javascript
+const progresser = tinyStatus({ stream: process.stderr })
+```
+
 ## License
 MIT
