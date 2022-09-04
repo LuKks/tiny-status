@@ -32,8 +32,7 @@ module.exports = function tinyStatus (opts = {}) {
   }
 
   function ontick (end, symbol = frame(), state) {
-    let prefix = crayon[color](symbol)
-    if (prefix) prefix += ' '
+    const prefix = symbol ? (crayon[color](symbol) + ' ') : ''
 
     if (!end) {
       cursor(prefix + prev)
