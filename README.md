@@ -21,7 +21,7 @@ setTimeout(() => progresser('Staging files (3/3)'), 3000)
 setTimeout(() => progresser.end('Files are staged'), 4000)
 
 setTimeout(() => progresser('Start again!'), 5000)
-setTimeout(() => progresser.end('File is saved'), 6000)
+setTimeout(() => progresser.end('First stage was completed'), 6000)
 setTimeout(() => progresser.success('File is saved successfully'), 6500)
 setTimeout(() => progresser.error('An error occurred'), 7000)
 setTimeout(() => progresser.warning('Caution with this operation'), 7500)
